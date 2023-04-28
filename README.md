@@ -7,5 +7,7 @@
 1. `ctrl+a I`
 1. Remap `ctrl+;` to `ctrl+s` (for window navigation):
     * Windows: use [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
-    * Mac: use Karabiner-Elements and import this [complex modification](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6ImN0cmwrOyAtPiBjdHJsK3MiLCJydWxlcyI6W3siZGVzY3JpcHRpb24iOiJjdHJsKzsgLT4gY3RybCtzIiwibWFuaXB1bGF0b3JzIjpbeyJ0eXBlIjoiYmFzaWMiLCJmcm9tIjp7Im1vZGlmaWVycyI6eyJtYW5kYXRvcnkiOlsibGVmdF9jb250cm9sIl19LCJrZXlfY29kZSI6InNlbWljb2xvbiJ9LCJ0byI6W3sicmVwZWF0Ijp0cnVlLCJrZXlfY29kZSI6InMiLCJtb2RpZmllcnMiOlsibGVmdF9jb250cm9sIl19XX1dfV19)
+    * Mac:
+        * Disable mission control spaces key combinations: Preferences > Keyboard > Keyboard Shortcuts > Mission Control > Mission Control
+        * Use Karabiner-Elements and import this [complex modification](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6ImN0cmwrOyAtPiBjdHJsK3MiLCJydWxlcyI6W3siZGVzY3JpcHRpb24iOiJjdHJsKzsgLT4gY3RybCtzIiwibWFuaXB1bGF0b3JzIjpbeyJ0eXBlIjoiYmFzaWMiLCJmcm9tIjp7Im1vZGlmaWVycyI6eyJtYW5kYXRvcnkiOlsibGVmdF9jb250cm9sIl19LCJrZXlfY29kZSI6InNlbWljb2xvbiJ9LCJ0byI6W3sicmVwZWF0Ijp0cnVlLCJrZXlfY29kZSI6InMiLCJtb2RpZmllcnMiOlsibGVmdF9jb250cm9sIl19XX1dfV19)
     * Linux: use [XKB](https://www.x.org/wiki/XKB)
