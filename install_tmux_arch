@@ -1,0 +1,19 @@
+# Create a directory
+mkdir ~/tmux-install
+cd ~/tmux-install
+
+sudo pacman -Sy jq libncurses-dev bison flex libevent-dev build-essential autoconf libtool libssl-dev python3-pkgconfig libcurl4-gnutls-dev
+
+TMUX_DOWNLOAD_URL=$(curl -s https://api.github.com/repos/tmux/tmux/releases/latest | jq -r '.assets[] | select(.name | test("tmux-.+\\.tar.gz")) | .browser_download_url')
+TMUX_ASSET=$(echo $TMUX_DOWNLOAD_URL | sed -n "s/^.*\/\(.*$\)/\1/p")
+TMUX_DIR=$(echo $TMUX_ASSET | sed -n "s/\(tmux-.*\).tar.gz/\1/p")
+
+curl -OL $TMUX_DOWNLOAD_URL
+tar xzf $TMUX_ASSET
+
+# Compile tmux
+echo "======== Compiling tmux ========"
+cd $TMUX_DIR
+./configure && make
+sudo make install
+echo "======== Finished compiling tmux ========"
